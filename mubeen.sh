@@ -12,9 +12,4 @@ ram_details=$(free -h | grep 'Mem:' | awk '{print $2}')
 # my system HDD detail is here
 hdd_details=$(df -h --total | grep 'total' | awk '{print $2}')
 
-# Output the details in the desired format
-echo "name:$your_name"
-echo "cpu:$cpu_details"
-echo "ram:$ram_details"
-echo "hdd:$hdd_details"
 
